@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@nomiclabs/hardhat-web3": "^2.0.0",
     "@openzeppelin/contracts": "^4.7.0",
     "@rari-capital/solmate": "^6.4.0",
     "dotenv": "^16.0.1",

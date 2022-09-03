@@ -35,6 +35,9 @@ describe("VerifySignature", function () {
       console.log(`signedhash by ${signerAddress}:
        ${signedhash}`);
 
+      const ethSignedHash = await contract.getEthSignedMessageHash(messageHash);
+      console.log("recoverSigner: ", await contract.recoverSigner(ethSignedHash, signedhash));
+
       expect(await contract.verify(
         signerAddress,
         to,
